@@ -23,7 +23,7 @@ class CpfCnpj
      */
     public function maskCpfOrCnpj($cpfOrCnpj): string
     {
-        $cpfOrCnpj = $this->maskCpfOrCnpj($cpfOrCnpj);
+        $cpfOrCnpj = $this->removeMaskCpfOrCnpj($cpfOrCnpj);
 
         if(strlen($cpfOrCnpj) > 11) {
             return $this->maskCnpj($cpfOrCnpj);
