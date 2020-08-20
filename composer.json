@@ -1,0 +1,28 @@
+{
+    "name": "rcngo/cpfcnpj",
+    "description": "Cpf or Cnpj Functions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael da Cruz Nascimento",
+            "email": "cruz.rafael@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "~7.25.0"
+    },
+    "autoload-dev": {
+        "classmap": ["tests/"],
+        "psr-4": {
+            "rcngo\\cpfcnpj\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~v5.4.0",
+        "phpunit/phpunit": "9.2.*",
+        "phpspec/phpspec": "6.2.*",
+        "laracasts/testdummy": "2.4",
+        "laravel/laravel": "^v7.0.0"
+    }
+}
