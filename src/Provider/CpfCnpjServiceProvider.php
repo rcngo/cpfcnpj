@@ -25,12 +25,5 @@ class CpfCnpjServiceProvider extends ServiceProvider
             return $this->app->make(CpfCnpj::class);
         });
     }
-
-    /**
-     *
-     */
-    public function boot()
-    {
-
-    }
+    
 }
