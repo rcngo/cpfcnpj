@@ -3,6 +3,7 @@
 namespace rcngo\cpfcnpj\Provider;
 
 use Illuminate\Support\ServiceProvider;
+use rcngo\cpfcnpj\CpfCnpj;
 
 /**
  * Class CpfCnpjServiceProvider
@@ -21,7 +22,7 @@ class CpfCnpjServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('cpfcnpj', function () {
-            return $this->app->make(rcngo\cpfcnpj\CpfCnpj::class);
+            return $this->app->make(CpfCnpj::class);
         });
     }
 
