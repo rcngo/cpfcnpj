@@ -1,23 +1,32 @@
 # Validate CPF and CNPJ, remove and include mask.
 
-## 
-Installation / Configuration
+## Installation / Configuration
 
-Include ServiceProvider in the config \ app.php file
+Navigate to your project folder, for example:
 
-```php
-'providers' => [
-    rcngo\cpfcnpj\Provider\CpfCnpjServiceProvider::class,
-];
+```
+cd /etc/www/projeto
 ```
 
-Also in this file, register the facade in the 'aliases' array
+And then run:
+
+```
+composer require rcngo/cpfcnpj:1.0.* --no-scripts
+```
+
+Or add it to the composer.json file, add it to your "require" :, example:
 
 ```php
-'aliases' => [
-    'cpfcnpj' => rcngo\cpfcnpj\Facade\CpfCnpj::class,
-];
+{
+    "require": {
+        "rcngo/cpfcnpj": "1.0.*"
+    }
+}
 ```
+
+
+Run the composer update --no-scripts command.
+
 
 ## Use
 
