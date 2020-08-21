@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "php": "^7.2 || 8.*",
-        "illuminate/support": "^7.*"
+        "php": "7.* || 8.*",
+        "illuminate/support": "7.*"
     },
     "autoload": {
         "psr-4": {
@@ -26,5 +26,15 @@
     "require-dev": {
         "orchestra/testbench": "~v5.4.0",
         "phpunit/phpunit": "9.2.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rcngo\\cpfcnpj\\Provider\\CpfCnpjServiceProvider"
+            ],
+            "aliases": {
+                "cpfcnpj": "rcngo\\cpfcnpj\\Facade\\CpfCnpj"
+            }
+        }
     }
 }
